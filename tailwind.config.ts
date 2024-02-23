@@ -47,6 +47,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [addVariablesForColors,],
+  plugins: [addVariablesForColors,require("@tailwindcss/aspect-ratio"),],
 };
 export default config;
