@@ -20,7 +20,7 @@ function FeaturedCourses() {
    );
    return (
       <>
-         <div className="py-12 px-8 bg-gray-900 w-full min-h-screen">
+         <div className="py-12 px-8 bg-gray-900 w-full">
             <div>
                <div className="text-center">
                   <h2 className="text-base text-green-600 font-semibold uppercase tracking-wide">
@@ -34,7 +34,10 @@ function FeaturedCourses() {
             <div className="mt-10">
                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
                   {featuredCourses.map((course: Course) => (
-                     <div className="flex justify-center" key={course.id}>
+                     <div
+                        className="flex justify-center cursor-pointer hover:scale-110 hover:duration-700"
+                        key={course.id}
+                     >
                         <BackgroundGradient className="flex flex-col rounded-[22px] bg-white dark:bg-zinc-900 overflow-hidden h-full max-w-sm">
                            <div className="p-4 sm:p-6 flex flex-col text-center items-center flex-grow">
                               <p className="text-lg sm:text-xl text-black m-2 dark:text-neutral-200">
